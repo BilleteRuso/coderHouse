@@ -1,4 +1,5 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
 import User from "./components/Users";
 
 function App() {
@@ -25,8 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Suburbano</h1>
-      <hr />
+      <NavBar />
       {users.map(({ name, lastName, age, user }) => (
         <User fisrtName={name} lastName={lastName} age={age} user={user} />
       ))}
