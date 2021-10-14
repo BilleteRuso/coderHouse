@@ -1,0 +1,19 @@
+.item-container{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2{
+    margin: 0px;
+    color: #1361bb;
+}
+.item-slogan{
+    text-align: center;
+
+}

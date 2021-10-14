@@ -1,0 +1,44 @@
+.appbar{
+    background-color: rgba(255, 255, 255, 0.7) !important;   
+    padding: 0 50px;
+    position: fixed !important;
+    z-index: 999;
+    
+}
+
+.appbar:hover{
+    background-color: rgb(23,26,33) !important; 
+    transition-timing-function: ease-in;
+    transition: all 600ms;
+}
+
+
+.appbar-iconbutton{
+    color: #4098fc !important;
+}
+
+.appbar-logo{
+    color: #1b73d8  !important;
+    font-size: 2.5rem;
+    margin-right:4px;
+}
+.appbar-logo:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition: all 300ms;
+}
+.appbar-typography{
+    color: #1b73d8 !important;
+    font-weight: 800;
+    display: block;
+    font-size: 4rem;
+}
+.appbar-icon{
+    color: #1b73d8  !important;
+    height: 18px;
+}
+.appbar-icon:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition: all 300ms;
+}
