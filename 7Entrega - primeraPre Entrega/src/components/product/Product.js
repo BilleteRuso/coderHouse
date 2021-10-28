@@ -5,12 +5,10 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import ItemCount from "../itemCount/ItemCount";
+import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({ id, title, price, rating, image }) => {
-  const handleShowProductClick = () => {
-    console.log(`Product ${id} clicked`);
-  };
   return (
     <Card className="card" sx={{ maxWidth: 345 }}>
       <strong>Precio: ${price}</strong>
@@ -22,9 +20,9 @@ const Product = ({ id, title, price, rating, image }) => {
         </Typography>
       </CardContent>
       <CardActions className="card-action">
-        <button className="card-button" onClick={handleShowProductClick}>
-          Ver detalle del producto
-        </button>
+        <Link to={`item/${id}`}>
+          <button className="card-button">Ver detalle del producto</button>
+        </Link>
       </CardActions>
     </Card>
   );

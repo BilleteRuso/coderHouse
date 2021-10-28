@@ -1,0 +1,37 @@
+.card-detail {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card-action-detail {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card-media {
+  width: 200px;
+}
+
+.card-content {
+  height: 2000px !important;
+}
+
+.card-count {
+  padding-top: 100px;
+}
+
+.card-button-detail {
+  margin: 0px;
+  font-weight: 400;
+  display: block;
+  font-size: 0.8rem;
+  padding: 6px;
+  color: #1361bb;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-style: solid;
+}
