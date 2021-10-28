@@ -1,0 +1,40 @@
+.itemcount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemcount-container {
+  display: flex;
+  align-items: center;
+}
+
+.itemcount-button {
+  margin: 0px;
+  font-weight: 400;
+  display: block;
+  font-size: 1.4rem;
+  color: #1361bb;
+  width: 80px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: solid;
+}
+.itemcount-button.delete {
+  width: 180px;
+}
+
+h3,
+h5 {
+  margin: 0px;
+}
+
+.itemcount-button:hover {
+  background-color: rgb(212, 209, 212);
+  transform: scale(1.1);
+  transition-timing-function: ease-in;
+  transition: all 300ms;
+}
+.item-slogan {
+  text-align: center;
+}
