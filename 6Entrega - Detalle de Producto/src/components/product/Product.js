@@ -5,30 +5,24 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import ItemCount from "../itemCount/ItemCount";
+import { Link } from "react-router-dom";
 import "./Product.css";
 
-const IMG =
-  "https://portsaid.vteximg.com.br/arquivos/ids/246178-768-960/AP327401_MW_3.jpg?v=637644827038700000";
-
-const Product = ({ id, name, description, stock }) => {
-  const handleShowProductClick = () => {
-    console.log(`Product ${id} clicked`);
-  };
-
+const Product = ({ id, title, price, rating, image }) => {
   return (
     <Card className="card" sx={{ maxWidth: 345 }}>
-      <strong>{name}</strong>
-      <CardMedia component="img" height="194" image={IMG} alt="T-shirt" />
+      <strong>Precio: ${price}</strong>
+      <CardMedia component="img" height="300" image={image} alt="T-shirt" />
       <CardContent>
+        <strong>{title}</strong>
         <Typography variant="body2" color="text.secondary">
-          <strong>{description}</strong>
+          <ItemCount num={rating.count} />
         </Typography>
-        <ItemCount num={stock} />
       </CardContent>
       <CardActions className="card-action">
-        <button className="card-button" onClick={handleShowProductClick}>
-          Ver detalle del producto
-        </button>
+        <Link to={`item/${id}`}>
+          <button className="card-button">Ver detalle del producto</button>
+        </Link>
       </CardActions>
     </Card>
   );
